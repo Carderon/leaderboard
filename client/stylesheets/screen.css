@@ -1,0 +1,19 @@
+.list-group-item{
+    display: list-item;
+    background-color: #ddd;
+    font-size: 1.5em;
+    margin-bottom: 0.55em;
+}
+.active{
+    background-color:gray;
+}
+html{
+    background: url(img/armes.jpg) no-repeat center 10px;
+    background-size: 200px 200px;
+}
+#main{
+    margin-top: 225px;
+}
+.page-header{
+    text-indent: -9999px;
+}

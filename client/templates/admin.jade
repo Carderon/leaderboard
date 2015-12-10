@@ -1,0 +1,17 @@
+template(name='admin')
+    ol.list-group
+        each teams
+            li.list-group-item {{ name }}
+                span.badge {{ score }} point(s)
+                button.btn.btn-default.btn-sm.addOne +1
+                button.btn.btn-default.btn-sm.addFive +5
+                button.btn.btn-danger.btn-sm.remove Delete
+                button.btn.btn-default.btn-sm.takeOne -1
+                button.btn.btn-default.btn-sm.takeFive -5
+    div.row
+        form.form
+            div.form-group
+                label.control-label Ajouter une équipe 
+                input.form-control(name='name',type='text',placeholder='Nom de l\'équipe')
+            div.form-group
+                input.btn-block.btn.btn-primary(type='submit','value'='Valider')

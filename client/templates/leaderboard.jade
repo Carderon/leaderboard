@@ -1,0 +1,5 @@
+template(name='leaderboard')
+    ol.list-group
+        each teams
+            li.list-group-item {{ name }}
+                span.badge.label-primary {{ score }} point(s)
